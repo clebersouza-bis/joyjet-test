@@ -1,4 +1,4 @@
 # JoyJet-test
 Repository for JoyJet Company Test 
 
-The documentation 
+Important Advice: Read the documentation 
