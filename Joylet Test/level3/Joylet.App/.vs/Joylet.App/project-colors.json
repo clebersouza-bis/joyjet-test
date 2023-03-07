@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5253d6fa-ae1d-4041-9206-dbf33249c4e4": {
+      "ProjectGuid": "5253d6fa-ae1d-4041-9206-dbf33249c4e4",
+      "DisplayName": "Joylet.App",
+      "ColorIndex": 0
+    },
+    "790cc9a2-2e6e-48d7-9282-9dba4eca4999": {
+      "ProjectGuid": "790cc9a2-2e6e-48d7-9282-9dba4eca4999",
+      "DisplayName": "Joylet.API",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "1c265516-5655-430c-87a4-455136646ce3": {
+      "ProjectGuid": "1c265516-5655-430c-87a4-455136646ce3",
+      "DisplayName": "JoyJet.IntegrationTest",
+      "ColorIndex": 2
+    },
+    "72970819-f692-4f4c-aee3-41f8d4b38a53": {
+      "ProjectGuid": "72970819-f692-4f4c-aee3-41f8d4b38a53",
+      "DisplayName": "Joylet.API.Test",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
