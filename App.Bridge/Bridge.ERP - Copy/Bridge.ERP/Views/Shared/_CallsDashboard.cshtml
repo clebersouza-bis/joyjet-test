@@ -1,0 +1,232 @@
+﻿@{
+	//Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*	<div class="content-wrapper">
+		<div class="content-header">
+			<div class="container-fluid">*@
+				<!-- Main content -->
+				<section class="content">
+				<section class="content">
+					<div class="container-fluid">
+						<!-- Info boxes -->
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="info-box">
+									<span class="info-box-icon alert-success elevation-1"><i class="fas fa-phone-volume"></i></span>
+
+									<div class="info-box-content">
+										<span class="info-box-text">Connection Rate</span>
+										<span class="info-box-number" id="connectionRate">
+											<small>%</small>
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="info-box mb-3">
+									<span class="info-box-icon alert-danger elevation-1"><i class="fas fa-users"></i></span>
+
+									<div class="info-box-content">
+										<span class="info-box-text">Conversion Rate</span>
+										<span class="info-box-number" id="convertionRate">
+											<small>%</small>
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<!-- fix for small devices only -->
+							<div class="clearfix hidden-md-up"></div>
+
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="info-box mb-3">
+									<span class="info-box-icon alert-info elevation-1"><i class="fas fa-phone-slash"></i></span>
+
+									<div class="info-box-content">
+										<span class="info-box-text">Drop Rate</span>
+										<span class="info-box-number" id="dropRate">
+											<small>%</small>
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-12 col-sm-6 col-md-3">
+								<div class="info-box mb-3">
+									<span class="info-box-icon alert-primary elevation-1"><i class="fab fa-hotjar"></i></span>
+
+									<div class="info-box-content">
+										<span class="info-box-text">Total Leads</span>
+										<span class="info-box-number" id="leadCount"></span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+						</div>
+
+						<!-- *************** TESTE DE LAYOUT *********** -->
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h5 class="card-title">Outbound Units Calls</h5>
+
+										<div class="card-tools">
+											<button type="button" class="btn btn-tool" data-card-widget="collapse">
+												<i class="fas fa-minus"></i>
+											</button>
+											<div class="btn-group">
+												<button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+													<i class="fas fa-wrench"></i>
+												</button>
+												<div class="dropdown-menu dropdown-menu-right" role="menu">
+													<a href="#" class="dropdown-item">Action</a>
+													<a href="#" class="dropdown-item">Another action</a>
+													<a href="#" class="dropdown-item">Something else here</a>
+													<a class="dropdown-divider"></a>
+													<a href="#" class="dropdown-item">Separated link</a>
+												</div>
+											</div>
+											<button type="button" class="btn btn-tool" data-card-widget="remove">
+												<i class="fas fa-times"></i>
+											</button>
+										</div>
+									</div>
+									<!-- /.card-header -->
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-8">
+
+												<div class="chart" id="chartAreaReport">
+													<!-- Sales Chart Canvas -->
+													<!-- <canvas id="areaChart" height="180" style="height: 220px;"></canvas> -->
+												</div>
+												<!-- /.chart-responsive -->
+											</div>
+											<!-- /.col -->
+											<div class="col-md-4">
+												<div class="chart" id="chartFunnelReport" >
+													@*<div id="funnelChart" style="min-height: 200px; height: 220px; max-height: 250px; max-width: 100%;"></div>*@
+												</div>
+											</div>
+											<!-- /.col -->
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- ./card-body -->
+									<div class="card-footer">
+										<div class="row">
+											<div class="col-sm-3 col-6">
+												<div class="description-block border-right">
+													<span class="description-percentage text-success"></span>
+													<h5 class="description-header" id="totalTalkedTime"></h5>
+													<span class="description-text">Total Talked Time</span>
+												</div>
+												<!-- /.description-block -->
+											</div>
+											<!-- /.col -->
+											<div class="col-sm-3 col-6">
+												<div class="description-block border-right">
+													<span class="description-percentage text-warning"></span>
+													<h5 class="description-header" id="averageTalkedTime"></h5>
+													<span class="description-text">Average Talked Time</span>
+												</div>
+												<!-- /.description-block -->
+											</div>
+											<!-- /.col -->
+											<div class="col-sm-3 col-6">
+												<div class="description-block border-right">
+													<span class="description-percentage text-success"></span>
+													<h5 class="description-header" id="agentDropRate"></h5>
+													<span class="description-text">Agent Drop Rate</span>
+												</div>
+												<!-- /.description-block -->
+											</div>
+											<!-- /.col -->
+											<div class="col-sm-3 col-6">
+												<div class="description-block">
+													<span class="description-percentage text-danger"></span>
+													<h5 class="description-header" id="callToGetLead"></h5>
+													<span class="description-text">Calls to Get a Lead</span>
+												</div>
+												<!-- /.description-block -->
+											</div>
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.card-footer -->
+								</div>
+								<!-- /.card -->
+							</div>
+							<!-- /.col -->
+						</div>
+
+						<!-- Row for load charts -->
+
+						<div class="row">
+							<div class="col-md-6">
+
+								<!-- DONUT CHART -->
+								<div class="card card-light">
+									<div class="card-header">
+										<h3 class="card-title">System Dispositions Stats</h3>
+
+										<div class="card-tools">
+											<button type="button" class="btn btn-tool" data-card-widget="collapse">
+												<i class="fas fa-minus"></i>
+											</button>
+											<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+									<div class="card-body" id="chartDonutReport">
+										@*<canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>*@
+									</div>
+									<!-- /.card-body -->
+								</div>
+								<!-- /.card -->
+
+							</div>
+							<!-- /.col (LEFT) -->
+							<div class="col-md-6">
+								<!-- PIE CHART -->
+								<div class="card card-light">
+									<div class="card-header">
+										<h3 class="card-title">Calls Dispositions Stats</h3>
+
+										<div class="card-tools">
+											<button type="button" class="btn btn-tool" data-card-widget="collapse">
+												<i class="fas fa-minus"></i>
+											</button>
+											<button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+									<div class="card-body" id="chartPieReport">
+										@*<canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>*@
+									</div>
+									<!-- /.card-body -->
+								</div>
+								<!-- /.card -->
+
+							</div>
+							<!-- /.col (RIGHT) -->
+						</div>
+
+						<!-- End are for charts -->
+
+					</div>
+				</section>
+@*			</div>
+		</div>
+	</div>
+*@

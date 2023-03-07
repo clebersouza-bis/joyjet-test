@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tad8EXVNnkxnn97Ue/Ei5nWoV0TC8X6q2UxNaqiK0goz3Cd/1R9gkgkI1x4oiXQKXZcbPbdyb/9OA5lnInsjPA==",
+  "dgSpecHash": "MKqbHg7OE2gj0NBXgZOD3Ap+AagNWmBz2157MYX9Ul7qrXC6tius9XCmBO4kN+4kYCoHE1C3hGEEs8tSxxtCpA==",
   "success": true,
   "projectFilePath": "E:\\Joylet Test\\level3\\Joylet.App\\Joylet.API\\Joylet.API.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,7 @@
     "C:\\Users\\Otavio Menhart\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Otavio Menhart\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Otavio Menhart\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Otavio Menhart\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\Otavio Menhart\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

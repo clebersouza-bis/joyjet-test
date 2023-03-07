@@ -1,0 +1,124 @@
+﻿@model IEnumerable<Bridge.ERP.Models.Property>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="d-flex">
+  <div class="mr-auto p-2">
+    <a asp-action="Create" class="btn btn-info">Create New Property</a>
+    <h4>Properties List</h4>
+  </div>
+  @*mudar para Form*@
+<div class="p-2">
+<form asp-action="Index" asp-controller="Properties" method="get" >
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="SearchType">
+            <option selected>--Search Option--</option>
+            <option value="address">Address</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="phone">Phone</option>
+        </select>
+    <input type="text" class="" name="SearchString" placeholder="search" /> 
+    <button type="submit" class="btn btn-outline-warning" value="Filter" >Filter</button>
+</form>
+</div>
+</div>
+
+
+<table class="table table-hover text-nowrap">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertyZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                Lists
+            </th>
+            <th>
+                Tags
+            </th>
+            <th>Options</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropertyAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropertyCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropertyState)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropertyZip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ListCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PropertiesTags)
+                </td>
+                <td>
+                    <button href="#" type="button" class="btn alert-success btnDetails" data-value="@item.Id" title="List of Phones" ><span class="fa fa-phone-alt"></span></button> |
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn alert-warning"><span class="fa fa-pencil-alt"></span></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn alert-info" title="Details"><span class="fa fa-info-circle"></span></a> |
+                    <a asp-action="PostPodioForm" asp-route-id="@item.Id" class="btn alert-danger" title="Hot Lead"><span class="fa fa-fire"></span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div id="conteudoModal">
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $(".btnDetails").click(function () {
+            var id = $(this).data("value");
+            $("#conteudoModal").load("/Properties/DetailsPhone/" + id,
+                function (){
+                    $('#myModal').modal("show");
+
+            });
+        });
+    });
+</script>
+
+}

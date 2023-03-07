@@ -1,0 +1,16 @@
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.exe
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.deps.json
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.runtimeconfig.json
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.runtimeconfig.dev.json
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.dll
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\ref\Andela.App.dll
+E:\Andela\Andela.App\Andela.App\bin\Debug\net5.0\Andela.App.pdb
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.csproj.AssemblyReference.cache
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.GeneratedMSBuildEditorConfig.editorconfig
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.AssemblyInfoInputs.cache
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.AssemblyInfo.cs
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.csproj.CoreCompileInputs.cache
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.dll
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\ref\Andela.App.dll
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.pdb
+E:\Andela\Andela.App\Andela.App\obj\Debug\net5.0\Andela.App.genruntimeconfig.cache

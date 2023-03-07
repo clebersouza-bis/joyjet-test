@@ -1,0 +1,246 @@
+﻿@model Bridge.ERP.Models.Property
+
+@{
+    ViewData["Title"] = "Review to Push into CRM";
+}
+
+<div class="content-wrapper">
+    <div class="content">
+        <div class="container-fluid">
+            <h5>@ViewData["Title"]</h5>
+
+            <hr />
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group">
+                            <label asp-for="PropertyAddress" class="control-label"></label>
+                            <input asp-for="PropertyAddress" class="form-control" id="propertyAddress" disabled />
+                            <span asp-validation-for="PropertyAddress" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyCity" class="control-label"></label>
+                            <input asp-for="PropertyCity" class="form-control" id="propertyCity" disabled />
+                            <span asp-validation-for="PropertyCity" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyState" class="control-label"></label>
+                            <input asp-for="PropertyState" class="form-control" disabled />
+                            <span asp-validation-for="PropertyState" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyZip" class="control-label"></label>
+                            <input asp-for="PropertyZip" class="form-control" disabled />
+                            <span asp-validation-for="PropertyZip" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyCounty" class="control-label"></label>
+                            <input asp-for="PropertyCounty" class="form-control" disabled />
+                            <span asp-validation-for="PropertyCounty" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FirstName" class="control-label"></label>
+                            <input asp-for="FirstName" class="form-control" id="firstName" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastName" class="control-label"></label>
+                            <input asp-for="LastName" class="form-control" id="lastName" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Select correct Phone</label>
+                            <select asp-for="Phones" id="phoneNumber" class="form-control" asp-items="@(new SelectList(Model.Phones, "Id", "Phones"))">
+                            </select> 
+                            <span asp-validation-for="Phones" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email2" class="control-label"></label>
+                            <input asp-for="Email2" class="form-control" />
+                            <span asp-validation-for="Email2" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MailingAddress" class="control-label"></label>
+                            <input asp-for="MailingAddress" class="form-control" />
+                            <span asp-validation-for="MailingAddress" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MailingCity" class="control-label"></label>
+                            <input asp-for="MailingCity" class="form-control" />
+                            <span asp-validation-for="MailingCity" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MailingState" class="control-label"></label>
+                            <input asp-for="MailingState" class="form-control" />
+                            <span asp-validation-for="MailingState" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MailingZip" class="control-label"></label>
+                            <input asp-for="MailingZip" class="form-control" />
+                            <span asp-validation-for="MailingZip" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IsVacant" class="control-label"></label>
+                            <input asp-for="IsVacant" class="form-control" />
+                            <span asp-validation-for="IsVacant" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="IsMailingVacant" class="control-label"></label>
+                            <input asp-for="IsMailingVacant" class="form-control" />
+                            <span asp-validation-for="IsMailingVacant" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ApnNumber" class="control-label"></label>
+                            <input asp-for="ApnNumber" class="form-control" />
+                            <span asp-validation-for="ApnNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyTypeDetail" class="control-label"></label>
+                            <input asp-for="PropertyTypeDetail" class="form-control" />
+                            <span asp-validation-for="PropertyTypeDetail" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="OwnerOccupied" class="control-label"></label>
+                            <input asp-for="OwnerOccupied" class="form-control" />
+                            <span asp-validation-for="OwnerOccupied" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BedroomCount" class="control-label"></label>
+                            <input asp-for="BedroomCount" class="form-control" />
+                            <span asp-validation-for="BedroomCount" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BathroomCount" class="control-label"></label>
+                            <input asp-for="BathroomCount" class="form-control" />
+                            <span asp-validation-for="BathroomCount" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TotalBuildingAreaSquareFeet" class="control-label"></label>
+                            <input asp-for="TotalBuildingAreaSquareFeet" class="form-control" />
+                            <span asp-validation-for="TotalBuildingAreaSquareFeet" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LotSizeSquareFeet" class="control-label"></label>
+                            <input asp-for="LotSizeSquareFeet" class="form-control" />
+                            <span asp-validation-for="LotSizeSquareFeet" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="YearBuilt" class="control-label"></label>
+                            <input asp-for="YearBuilt" class="form-control" />
+                            <span asp-validation-for="YearBuilt" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TotalAssessedValue" class="control-label"></label>
+                            <input asp-for="TotalAssessedValue" class="form-control" />
+                            <span asp-validation-for="TotalAssessedValue" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ZoningCode" class="control-label"></label>
+                            <input asp-for="ZoningCode" class="form-control" />
+                            <span asp-validation-for="ZoningCode" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastStaleDate" class="control-label"></label>
+                            <input asp-for="LastStaleDate" class="form-control" />
+                            <span asp-validation-for="LastStaleDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastSalePrice" class="control-label"></label>
+                            <input asp-for="LastSalePrice" class="form-control" />
+                            <span asp-validation-for="LastSalePrice" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TotalOpenLienBalance" class="control-label"></label>
+                            <input asp-for="TotalOpenLienBalance" class="form-control" />
+                            <span asp-validation-for="TotalOpenLienBalance" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="EquityCurrentEstimatedBalance" class="control-label"></label>
+                            <input asp-for="EquityCurrentEstimatedBalance" class="form-control" />
+                            <span asp-validation-for="EquityCurrentEstimatedBalance" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="EstimatedValue" class="control-label"></label>
+                            <input asp-for="EstimatedValue" class="form-control" />
+                            <span asp-validation-for="EstimatedValue" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LtvCurrentEstimatedCombined" class="control-label"></label>
+                            <input asp-for="LtvCurrentEstimatedCombined" class="form-control" />
+                            <span asp-validation-for="LtvCurrentEstimatedCombined" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MlsStatus" class="control-label"></label>
+                            <input asp-for="MlsStatus" class="form-control" />
+                            <span asp-validation-for="MlsStatus" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Owner2FirstName" class="control-label"></label>
+                            <input asp-for="Owner2FirstName" class="form-control" />
+                            <span asp-validation-for="Owner2FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Owner2LastName" class="control-label"></label>
+                            <input asp-for="Owner2LastName" class="form-control" />
+                            <span asp-validation-for="Owner2LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PropertyType" class="control-label"></label>
+                            <input asp-for="PropertyType" class="form-control" />
+                            <span asp-validation-for="PropertyType" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="HotLead" class="control-label"></label>
+                            <input asp-for="HotLead" class="form-control" />
+                            <span asp-validation-for="HotLead" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Notes</label>
+                            <textarea class="form-control" rows="7" id="details"></textarea>
+                            <class ="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                            <button type="button" id="btn" class="btn btn-info">Push to CRM <span class="fa fa-paper-plane"></span></button>
+                            <button type="button" id="btnZillow" class="btn btn-dark">See on Zillow <span class="fa fa-home"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+            <script>
+                $("#btn").click(function () {
+                    var sellerName = $("#firstName").val() + " " + $("#lastName").val();
+                    var propertyAddress = $("#propertyAddress").val();
+                    var details = $("#details").val();
+                    var phone = $("#phoneNumber").find(":selected").text();
+                    console.log(sellerName);
+                    //fields[property-address-map]
+                    //var propertyAddress =  $("#PropertyAddress");
+                    var newTab = window.open(`https://podio.com/webforms/23584359/1696079?fields[seller-name]=${sellerName}&fields[property-address-map]=${propertyAddress}&fields[situation]=${details}&fields[seller-phone][][value]=${phone}&fields[vacant2]=3`, "_blank", "", true);
+                   // newTab.document.body.innerHTML = $("#partialview").html();
+                })
+
+                $("#btnZillow").click(function () {
+
+                    var newTab = window.open(`https://www.zillow.com/homes/34 Wood St,Coventry,RI,02816_rb`, "_blank", "", true);
+                   // newTab.document.body.innerHTML = $("#partialview").html();
+                })
+            </script>
+
+            }
+        </div>
+    </div>
+</div>

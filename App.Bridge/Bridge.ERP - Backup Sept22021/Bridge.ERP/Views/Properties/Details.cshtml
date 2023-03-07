@@ -1,0 +1,341 @@
+﻿@model Bridge.ERP.Models.Properties
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Properties</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyCity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyCity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyState)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyState)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyZip)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyZip)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            <label id="firstName" >@Model.FirstName</label>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            <label id="lastName" >@Model.LastName</label>
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ListCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ListCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailerCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailerCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OptOut)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OptOut)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyCounty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyCounty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailingAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailingAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailingCity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailingCity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailingState)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailingState)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailingZip)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailingZip)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MailingCounty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MailingCounty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsVacant)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsVacant)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IsMailingVacant)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IsMailingVacant)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ApnNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ApnNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyTypeDetail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyTypeDetail)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OwnerOccupied)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OwnerOccupied)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BedroomCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BedroomCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BathroomCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BathroomCount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalBuildingAreaSquareFeet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalBuildingAreaSquareFeet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LotSizeSquareFeet)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LotSizeSquareFeet)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.YearBuilt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.YearBuilt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalAssessedValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalAssessedValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ZoningCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ZoningCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastStaleDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastStaleDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastSalePrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastSalePrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalOpenLienBalance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalOpenLienBalance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EquityCurrentEstimatedBalance)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EquityCurrentEstimatedBalance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EstimatedValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EstimatedValue)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LtvCurrentEstimatedCombined)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LtvCurrentEstimatedCombined)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MlsStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MlsStatus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Owner2FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Owner2FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Owner2LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Owner2LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PropertyType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PropertyType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrimaryListSource)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PrimaryListSource)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PrimaryListType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PrimaryListType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CriticalStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CriticalStatus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HotLead)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HotLead)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MatchCrm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MatchCrm)
+        </dd>
+    </dl>
+
+    <h3>Phones</h3>
+   <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Phone
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Score
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th>
+                            SkipTraceSource
+                        </th>
+                        <th>
+                            Property
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Phone)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Phone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Type)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Score)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SkipTraceSource)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Property.PropertyAddress)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+<div>
+
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn alert-warning">Edit</a> |
+    <a asp-action="Index" class="btn alert-info" >Back to List</a>
+</div>
+</div>
+
+@section scripts{ 
+
+    
+}

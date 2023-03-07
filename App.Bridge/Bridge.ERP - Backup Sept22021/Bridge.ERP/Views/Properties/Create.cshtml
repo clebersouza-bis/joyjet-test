@@ -1,0 +1,253 @@
+﻿@model Bridge.ERP.Models.Properties
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Properties</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TenantId" class="control-label"></label>
+                <input asp-for="TenantId" class="form-control" />
+                <span asp-validation-for="TenantId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyAddress" class="control-label"></label>
+                <input asp-for="PropertyAddress" class="form-control" />
+                <span asp-validation-for="PropertyAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyCity" class="control-label"></label>
+                <input asp-for="PropertyCity" class="form-control" />
+                <span asp-validation-for="PropertyCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyState" class="control-label"></label>
+                <input asp-for="PropertyState" class="form-control" />
+                <span asp-validation-for="PropertyState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyZip" class="control-label"></label>
+                <input asp-for="PropertyZip" class="form-control" />
+                <span asp-validation-for="PropertyZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ListCount" class="control-label"></label>
+                <input asp-for="ListCount" class="form-control" />
+                <span asp-validation-for="ListCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailerCount" class="control-label"></label>
+                <input asp-for="MailerCount" class="form-control" />
+                <span asp-validation-for="MailerCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email2" class="control-label"></label>
+                <input asp-for="Email2" class="form-control" />
+                <span asp-validation-for="Email2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OptOut" class="control-label"></label>
+                <input asp-for="OptOut" class="form-control" />
+                <span asp-validation-for="OptOut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyCounty" class="control-label"></label>
+                <input asp-for="PropertyCounty" class="form-control" />
+                <span asp-validation-for="PropertyCounty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailingAddress" class="control-label"></label>
+                <input asp-for="MailingAddress" class="form-control" />
+                <span asp-validation-for="MailingAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailingCity" class="control-label"></label>
+                <input asp-for="MailingCity" class="form-control" />
+                <span asp-validation-for="MailingCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailingState" class="control-label"></label>
+                <input asp-for="MailingState" class="form-control" />
+                <span asp-validation-for="MailingState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailingZip" class="control-label"></label>
+                <input asp-for="MailingZip" class="form-control" />
+                <span asp-validation-for="MailingZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MailingCounty" class="control-label"></label>
+                <input asp-for="MailingCounty" class="form-control" />
+                <span asp-validation-for="MailingCounty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsVacant" class="control-label"></label>
+                <input asp-for="IsVacant" class="form-control" />
+                <span asp-validation-for="IsVacant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsMailingVacant" class="control-label"></label>
+                <input asp-for="IsMailingVacant" class="form-control" />
+                <span asp-validation-for="IsMailingVacant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ApnNumber" class="control-label"></label>
+                <input asp-for="ApnNumber" class="form-control" />
+                <span asp-validation-for="ApnNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyTypeDetail" class="control-label"></label>
+                <input asp-for="PropertyTypeDetail" class="form-control" />
+                <span asp-validation-for="PropertyTypeDetail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OwnerOccupied" class="control-label"></label>
+                <input asp-for="OwnerOccupied" class="form-control" />
+                <span asp-validation-for="OwnerOccupied" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BedroomCount" class="control-label"></label>
+                <input asp-for="BedroomCount" class="form-control" />
+                <span asp-validation-for="BedroomCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BathroomCount" class="control-label"></label>
+                <input asp-for="BathroomCount" class="form-control" />
+                <span asp-validation-for="BathroomCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalBuildingAreaSquareFeet" class="control-label"></label>
+                <input asp-for="TotalBuildingAreaSquareFeet" class="form-control" />
+                <span asp-validation-for="TotalBuildingAreaSquareFeet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LotSizeSquareFeet" class="control-label"></label>
+                <input asp-for="LotSizeSquareFeet" class="form-control" />
+                <span asp-validation-for="LotSizeSquareFeet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearBuilt" class="control-label"></label>
+                <input asp-for="YearBuilt" class="form-control" />
+                <span asp-validation-for="YearBuilt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalAssessedValue" class="control-label"></label>
+                <input asp-for="TotalAssessedValue" class="form-control" />
+                <span asp-validation-for="TotalAssessedValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ZoningCode" class="control-label"></label>
+                <input asp-for="ZoningCode" class="form-control" />
+                <span asp-validation-for="ZoningCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastStaleDate" class="control-label"></label>
+                <input asp-for="LastStaleDate" class="form-control" />
+                <span asp-validation-for="LastStaleDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastSalePrice" class="control-label"></label>
+                <input asp-for="LastSalePrice" class="form-control" />
+                <span asp-validation-for="LastSalePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalOpenLienBalance" class="control-label"></label>
+                <input asp-for="TotalOpenLienBalance" class="form-control" />
+                <span asp-validation-for="TotalOpenLienBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EquityCurrentEstimatedBalance" class="control-label"></label>
+                <input asp-for="EquityCurrentEstimatedBalance" class="form-control" />
+                <span asp-validation-for="EquityCurrentEstimatedBalance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstimatedValue" class="control-label"></label>
+                <input asp-for="EstimatedValue" class="form-control" />
+                <span asp-validation-for="EstimatedValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LtvCurrentEstimatedCombined" class="control-label"></label>
+                <input asp-for="LtvCurrentEstimatedCombined" class="form-control" />
+                <span asp-validation-for="LtvCurrentEstimatedCombined" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MlsStatus" class="control-label"></label>
+                <input asp-for="MlsStatus" class="form-control" />
+                <span asp-validation-for="MlsStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Owner2FirstName" class="control-label"></label>
+                <input asp-for="Owner2FirstName" class="form-control" />
+                <span asp-validation-for="Owner2FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Owner2LastName" class="control-label"></label>
+                <input asp-for="Owner2LastName" class="form-control" />
+                <span asp-validation-for="Owner2LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PropertyType" class="control-label"></label>
+                <input asp-for="PropertyType" class="form-control" />
+                <span asp-validation-for="PropertyType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimaryListSource" class="control-label"></label>
+                <input asp-for="PrimaryListSource" class="form-control" />
+                <span asp-validation-for="PrimaryListSource" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimaryListType" class="control-label"></label>
+                <input asp-for="PrimaryListType" class="form-control" />
+                <span asp-validation-for="PrimaryListType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CriticalStatus" class="control-label"></label>
+                <input asp-for="CriticalStatus" class="form-control" />
+                <span asp-validation-for="CriticalStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HotLead" class="control-label"></label>
+                <input asp-for="HotLead" class="form-control" />
+                <span asp-validation-for="HotLead" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatchCrm" class="control-label"></label>
+                <input asp-for="MatchCrm" class="form-control" />
+                <span asp-validation-for="MatchCrm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

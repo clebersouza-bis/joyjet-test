@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "66vaFeerx+VDeu/iZ5eg2kBdD/QHysZwukC+5nU9Fo5qbFQV4QYRjQVVfeyXk73bD6IznL0fW3Lt0ACFRNfmUQ==",
+  "success": true,
+  "projectFilePath": "E:\\Andela\\Andela.App\\Andela.App\\Andela.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Otavio Menhart\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
